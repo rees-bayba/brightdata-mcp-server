@@ -1,0 +1,27 @@
+{
+  "name": "brightdata-mcp-server",
+  "version": "1.0.0",
+  "description": "Brightdata MCP Server for Railway deployment with Supergateway",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx -y supergateway --stdio 'npx -y @brightdata/mcp' --port $PORT --baseUrl https://$RAILWAY_STATIC_URL --ssePath /sse --messagePath /message"
+  },
+  "keywords": [
+    "mcp",
+    "brightdata",
+    "supergateway",
+    "railway",
+    "web-scraping",
+    "model-context-protocol"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rees-bayba/brightdata-mcp-server.git"
+  },
+  "license": "MIT",
+  "author": "Railway Deploy",
+  "dependencies": {}
+}
